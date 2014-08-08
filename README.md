@@ -1,6 +1,6 @@
 # Tools to do root-cause analysis on FPM workers
 
-## analyzer.py
+## topnets.py
 
 Given a (compressed) access log, show for each window of 5 minutes what network
 (determined by first 3 quads of the IP address) used the most request time.

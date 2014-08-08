@@ -66,7 +66,7 @@ def main(filename):
         num_active += 1
 
         row["stat"] = stat(num_active)
-        print "%(time)s %(request_time)3.3f %(stat)s %(remote_addr)-15s -> %(status)s %(host)s %(request)s (%(user_agent)s)" % row
+        print "%(time)s %(request_time)7.3f %(stat)s %(remote_addr)-15s -> %(status)s %(host)s %(request)s (%(user_agent)s)" % row
 
         heappush(endings, row["end_time"])
 

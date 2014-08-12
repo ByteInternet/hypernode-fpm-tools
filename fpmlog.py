@@ -47,7 +47,7 @@ def read_requests(filename):
     return requests
 
 def stat(num_active):
-    return (min(NUM_SLOTS, num_active) * ".").ljust(NUM_SLOTS) + (min(0, num_active - NUM_SLOTS) * "*")
+    return (min(NUM_SLOTS, num_active) * ".").ljust(NUM_SLOTS) + (max(0, num_active - NUM_SLOTS) * "*")
 
 def main(filename):
     requests = read_requests(filename)
